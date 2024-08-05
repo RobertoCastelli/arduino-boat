@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+  background-color: #f4f4f4;
+  font-optical-sizing: auto;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Assicura che l'header sia sopra gli altri elementi */
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera sotto l'header */
+  text-align: center;
+  color: white;
+  background-color: #2c3e50;
+}
+
+.header h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.project-container--snippet,
+.project-container--materials,
+.project-container--breadboard,
+.project-container--details {
+  max-width: 800px;
+  margin: 20px auto; /* Aggiunge padding-top per compensare l'header fisso */
+  padding: 20px; /* Compensa l'header fisso e il footer fisso */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.project-container--details{
+  padding: 80px 20px 50px; /* Compensa l'header fisso e il footer fisso */
+}
+
+.project-container--breadboard {
+  display: flex;
+  justify-content: center; /* Centra l'immagine orizzontalmente */
+  align-items: center; /* Centra l'immagine verticalmente */ height: 200px; /* Mantiene le proporzioni dell'immagine */
+
+}
+
+.breadboard-img {
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+  max-width: 100%; /* Mantiene l'immagine all'interno del contenitore */
+  border-radius: 8px; /* Angoli arrotondati per l'immagine */
+}
+
+.project-image {
+  height: auto;
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+  color: #2c3e50;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera sopra il footer */
+  text-align: center;
+  color: white;
+  background-color: #2c3e50;
+}
+
+.code-snippet {
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  background: #000000;
+  overflow-x: auto;
+}
+
+.code-snippet pre {
+  margin: 0;
+  white-space: pre;
+  font-size: 1em;
+  line-height: 1.4;
+}
