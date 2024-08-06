@@ -235,7 +235,8 @@ void execSerialCmd() {
           KdM = atof(cmd);
         }
         char msg[100];
-        snprintf(msg, 100, "new PID param: %s KiH:%i, KdH:%i, KpM:%i, KiM:%i, KdM:%i", cmd, (int)KiH, (int)KdH, (int)KpM, (int)KiM, (int)KdM);
+        snprintf(msg, 100, "new PID param: %s KiH:%i, KdH:%i, KpM:%i, _
+        KiM:%i, KdM:%i", cmd, (int)KiH, (int)KdH, (int)KpM, (int)KiM, (int)KdM);
         log_print(msg);
         hPID.SetTunings(KpH, KiH, KdH);
         mPID.SetTunings(KpM, KiM, KdM);

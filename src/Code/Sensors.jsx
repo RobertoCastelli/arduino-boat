@@ -175,8 +175,15 @@ void updateDistanceFromPath() {
   double xc = C_Curr.Lng;
   double yc = C_Curr.Lat;
 
-  double x = (xc * pow(xs, 2) - 2 * xc * xs * xt - xs * ys * yt + yc * xs * ys + xs * pow(yt, 2) - yc * xs * yt + xc * pow(xt, 2) + xt * pow(ys, 2) - xt * ys * yt - yc * xt * ys + yc * xt * yt) / (pow(xs, 2) - 2 * xs * xt + pow(xt, 2) + pow(ys, 2) - 2 * ys * yt + pow(yt, 2));
-  double y = (pow(xs, 2) * yt - xs * xt * ys - xs * xt * yt + xc * xs * ys - xc * xs * yt + pow(xt, 2) * ys - xc * xt * ys + xc * xt * yt + yc * pow(ys, 2) - 2 * yc * ys * yt + yc * pow(yt, 2)) / (pow(xs, 2) - 2 * xs * xt + pow(xt, 2) + pow(ys, 2) - 2 * ys * yt + pow(yt, 2));
+  double x = (xc * pow(xs, 2) - 2 * xc * xs * xt - xs * ys * yt + yc * xs * ys +_
+   xs * pow(yt, 2) - yc * xs * yt + xc * pow(xt, 2) + xt * pow(ys, 2) - xt * ys *_
+    yt - yc * xt * ys + yc * xt * yt) / (pow(xs, 2) - 2 * xs * xt + pow(xt, 2) +_
+     pow(ys, 2) - 2 * ys * yt + pow(yt, 2));
+  
+  double y = (pow(xs, 2) * yt - xs * xt * ys - xs * xt * yt + xc * xs * ys - xc *_
+   xs * yt + pow(xt, 2) * ys - xc * xt * ys + xc * xt * yt + yc * pow(ys, 2) - 2 *_
+    yc * ys * yt + yc * pow(yt, 2)) / (pow(xs, 2) - 2 * xs * xt + pow(xt, 2) +_
+     pow(ys, 2) - 2 * ys * yt + pow(yt, 2));
 
   DistanceFromPath = TinyGPSPlus::distanceBetween(C_Curr.Lat, C_Curr.Lng, y, x);
 

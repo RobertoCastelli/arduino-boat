@@ -122,10 +122,6 @@ h2, h3, h4 {
   margin-bottom: 120px;
 }
 
-.thanks-page-container h4 {
-  color: #ccc;
-}
-
 /* IMAGE */
 .breadboard-img { 
   display: flex;
@@ -163,7 +159,8 @@ code {
 .code-motors h4,
 .code-navigation h4,
 .code-sd h4,
-.code-sensors h4 {
+.code-sensors h4,
+.thanks-page-container h4 {
   color: #ccc;
 }
 
@@ -175,7 +172,7 @@ code {
 
 .code-container ul li {
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .code-content {
@@ -213,6 +210,8 @@ code {
   background: rgba(0, 0, 0, 0.5);
   transform: translateY(-50%);
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Solo transizione del colore */
+
 }
 
 .carousel-control.prev {
@@ -224,7 +223,13 @@ code {
 }
 
 .carousel-control:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8); 
+  transform: translateY(-50%); 
+}
+
+.carousel-control:active {
+  background: rgba(0, 0, 0, 0.8); 
+  transform: translateY(-50%); 
 }
 
 /* FOOTER */
@@ -247,4 +252,84 @@ code {
 
 .footer--icons div {
   padding: 0 10px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .intro-container, 
+  .breadboard-container, 
+  .code-container, 
+  .conclusions-container, 
+  .materials-container, 
+  .photo-container, 
+  .thanks-page-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .intro-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .code-content {
+    flex-direction: column;
+  }
+
+  .code-content div {
+    width: 100%;
+  }
+
+  .carousel-control {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .intro-container, 
+  .breadboard-container, 
+  .code-container, 
+  .conclusions-container, 
+  .materials-container, 
+  .photo-container, 
+  .thanks-page-container {
+    padding: 5px;
+  }
+
+  .carousel-control {
+    padding: 6px;
+    font-size: 14px;
+  }
 }

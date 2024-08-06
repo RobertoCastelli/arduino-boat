@@ -121,7 +121,8 @@ bool checkMotorsTemp() {
   //Serial.print("Temp L: ");
   double temp = analogRead(L_MOTOR_TEMP_PIN);
   //Serial.print(temp);
-  L_motor_temp = (temp * 3.22265625 - 424) / 6.25; // 3.222 is multiplier for 3.3v board. 4.8828125 for 5v board
+  L_motor_temp = (temp * 3.22265625 - 424) / 6.25; // 3.222 is multiplier for 3.3_
+   board. 4.8828125 for 5v board
   //Serial.print(" - C ");
   //Serial.println(L_motor_temp);
 
