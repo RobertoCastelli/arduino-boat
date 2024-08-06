@@ -1,4 +1,3 @@
-// src/App.js
 import React from "react";
 import "./styles/index.css";
 import Header from "./components/Header";
@@ -7,7 +6,7 @@ import Intro from "./pages/Intro";
 import Materials from "./pages/Materials";
 import Breadboard from "./pages/Breadboard";
 import Code from "./pages/Code";
-import Photo from "./pages/Photo";
+import Photos from "./pages/Photos";
 import Conclusions from "./pages/Conclusions";
 import ThanksPage from "./pages/ThanksPage";
 
@@ -20,7 +19,7 @@ function App() {
         <Materials />
         <Breadboard />
         <Code />
-        <Photo />
+        <Photos />
         <Conclusions />
         <ThanksPage />
       </main>

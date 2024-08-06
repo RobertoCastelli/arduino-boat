@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import foto1 from "../images/foto1.jpg";
-import foto2 from "../images/foto1.jpg";
-import foto3 from "../images/foto1.jpg";
+import foto2 from "../images/foto2.jpg";
+import foto3 from "../images/foto3.jpg";
 
-const Photo = () => {
+const Photos = () => {
   // Stato per mantenere traccia dell'indice dell'immagine corrente
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -34,7 +34,7 @@ const Photo = () => {
   };
 
   return (
-    <section className="project-container--foto">
+    <section className="photo-container">
       <h3>
         4. foto {currentIndex + 1}/{images.length}
       </h3>
@@ -58,4 +58,4 @@ const Photo = () => {
   );
 };
 
-export default Photo;
+export default Photos;

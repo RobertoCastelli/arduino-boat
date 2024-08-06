@@ -1,4 +1,3 @@
-// src/components/Footer.js
 import React from "react";
 import "../styles/index.css";
 import { FaGithub } from "react-icons/fa";

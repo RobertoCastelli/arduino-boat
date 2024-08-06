@@ -2,7 +2,7 @@ import React from "react";
 
 const Conclusions = () => {
   return (
-    <section className="project-container--conclusions">
+    <section className="conclusions-container">
       <h3>5. conclusioni</h3>
       <p>
         Il progetto mostra come Arduino possa essere utilizzato per

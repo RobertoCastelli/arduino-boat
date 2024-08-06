@@ -3,7 +3,7 @@ import breadboardImage from "../images/circuito_motore.png";
 
 const Breadboard = () => {
   return (
-    <section className="project-container--breadboard">
+    <section className="breadboard-container">
       <h3>2. schema breadboard</h3>
       <div>
         <img
