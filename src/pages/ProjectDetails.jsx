@@ -1,6 +1,8 @@
 // src/ProjectDetails.js
 import React from "react";
 import "../styles/index.css";
+import { VscCode } from "react-icons/vsc";
+import { IoBuildOutline } from "react-icons/io5";
 
 const ProjectDetails = () => {
   return (
@@ -18,11 +20,18 @@ const ProjectDetails = () => {
       come sia possibile costruire un motore funzionale per una barca
       utilizzando componenti elettronici comuni e la programmazione.
       <p>
-        Seguendo le nostre istruzioni, potrai realizzare un motore di barca che
-        ti permetterà di navigare con facilità.
+        Seguendo le istruzioni, potrai realizzare un motore di barca che ti
+        permetterà di navigare con facilità.
       </p>
       <h3>livello di difficoltà</h3>
-      <p>4/5</p>
+      <p>
+        <VscCode />
+        programmazione 5/5
+      </p>
+      <p>
+        <IoBuildOutline />
+        costruzione 2/5
+      </p>
     </section>
   );
 };

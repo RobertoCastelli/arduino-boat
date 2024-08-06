@@ -5,66 +5,32 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat","Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   color: #333;
-  background-color: #f4f4f4;
+  background-color: #2c3e50;
   font-optical-sizing: auto;
   flex-direction: column;
 }
 
-.header {
+.header { 
   position: fixed;
   top: 0;
-  z-index: 1000; /* Assicura che l'header sia sopra gli altri elementi */
+  z-index: 1000;
   width: 100%;
+  height: 70px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera sotto l'header */
   text-align: center;
-  color: white;
-  background-color: #2c3e50;
+  color: #fff;
+  background: url("../images/bg1.jpg"), repeat;
+  background-size: auto;
+  border-bottom: 3px solid #2c3e50;
 }
 
 .header h1 {
   margin: 0;
   text-transform: uppercase;
-}
-
-.project-container--snippet,
-.project-container--materials,
-.project-container--breadboard,
-.project-container--details {
-  max-width: 800px;
-  margin: 20px auto; /* Aggiunge padding-top per compensare l'header fisso */
-  padding: 20px; /* Compensa l'header fisso e il footer fisso */
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: white;
-}
-
-.project-container--details{
-  padding: 80px 20px 50px; /* Compensa l'header fisso e il footer fisso */
-}
-
-.project-container--breadboard {
-  display: flex;
-  justify-content: center; /* Centra l'immagine orizzontalmente */
-  align-items: center; /* Centra l'immagine verticalmente */ height: 200px; /* Mantiene le proporzioni dell'immagine */
-
-}
-
-.breadboard-img {
-  height: auto; /* Mantiene le proporzioni dell'immagine */
-  max-width: 100%; /* Mantiene l'immagine all'interno del contenitore */
-  border-radius: 8px; /* Angoli arrotondati per l'immagine */
-}
-
-.project-image {
-  height: auto;
-  max-width: 100%;
-  margin: 20px 0;
-  border-radius: 8px;
 }
 
 h2, h3 {
@@ -77,15 +43,35 @@ ul {
   list-style-type: disc;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 0;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera sopra il footer */
-  text-align: center;
-  color: white;
-  background-color: #2c3e50;
+.project-container--snippet,
+.project-container--materials,
+.project-container--breadboard,
+.project-container--details,
+.project-container--foto,
+.project-container--conclusion {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 10px; 
+}
+.project-container--details {
+  margin-top: 100px;
+}
+
+.project-container--conclusion {
+  margin-bottom: 60px;
+}
+
+.breadboard-img { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
 }
 
 .code-snippet {
@@ -102,4 +88,59 @@ ul {
   white-space: pre;
   font-size: 1em;
   line-height: 1.4;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  background-color: #2c3e50;
+  border-top: 1px solid black;
+}
+
+.project-container--foto {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel img {
+  display: block;
+  width: 100%;
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+  border-radius: 10px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
 }

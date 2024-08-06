@@ -26,6 +26,7 @@ const CodeSnippet = () => {
 
   return (
     <section className="project-container--snippet">
+      <h3>codice</h3>
       <div className="code-snippet">
         <pre>
           <code>{codeString}</code>
