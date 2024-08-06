@@ -3,24 +3,26 @@ import React from "react";
 import "./styles/index.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ProjectDetails from "./pages/ProjectDetails";
-import ProjectMaterials from "./pages/ProjectMaterials";
-import ProjectBreadboard from "./pages/ProjectBreadboard";
-import CodeSnippet from "./pages/CodeSnippet";
-import ProjectFoto from "./pages/ProjectFoto";
-import ProjectConclusion from "./pages/ProjectConclusion";
+import Intro from "./pages/Intro";
+import Materials from "./pages/Materials";
+import Breadboard from "./pages/Breadboard";
+import Code from "./pages/Code";
+import Photo from "./pages/Photo";
+import Conclusions from "./pages/Conclusions";
+import ThanksPage from "./pages/ThanksPage";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <main>
-        <ProjectDetails />
-        <ProjectMaterials />
-        <ProjectBreadboard />
-        <CodeSnippet />
-        <ProjectFoto />
-        <ProjectConclusion />
+        <Intro />
+        <Materials />
+        <Breadboard />
+        <Code />
+        <Photo />
+        <Conclusions />
+        <ThanksPage />
       </main>
       <Footer />
     </div>

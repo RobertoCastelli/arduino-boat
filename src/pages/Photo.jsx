@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import foto1 from "../images/foto1.jpg";
-import foto2 from "../images/bg.jpg";
-import foto3 from "../images/boat.jpg";
+import foto2 from "../images/foto1.jpg";
+import foto3 from "../images/foto1.jpg";
 
-const ProjectFoto = () => {
+const Photo = () => {
   // Stato per mantenere traccia dell'indice dell'immagine corrente
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,20 +35,20 @@ const ProjectFoto = () => {
 
   return (
     <section className="project-container--foto">
-      <h3>foto</h3>
+      <h3>
+        4. foto {currentIndex + 1}/{images.length}
+      </h3>
       <div className="carousel">
         {/* Pulsante per andare all'immagine precedente */}
         <button className="carousel-control prev" onClick={goToPrevious}>
           {"<"}
         </button>
-
         {/* Immagine corrente */}
         <img
           src={images[currentIndex]}
           alt={`foto${currentIndex + 1}`}
           className="foto"
         />
-
         {/* Pulsante per andare all'immagine successiva */}
         <button className="carousel-control next" onClick={goToNext}>
           {">"}
@@ -58,4 +58,4 @@ const ProjectFoto = () => {
   );
 };
 
-export default ProjectFoto;
+export default Photo;

@@ -2,10 +2,10 @@
 import React from "react";
 import "../styles/index.css";
 
-const ProjectMaterials = () => {
+const Materials = () => {
   return (
     <section className="project-container--materials">
-      <h3>elenco materiali</h3>
+      <h3>1. elenco materiali</h3>
       <ul>
         <li>Arduino Uno</li>
         <li>Wi-Fi Module (ESP8266)</li>
@@ -16,4 +16,4 @@ const ProjectMaterials = () => {
   );
 };
 
-export default ProjectMaterials;
+export default Materials;
