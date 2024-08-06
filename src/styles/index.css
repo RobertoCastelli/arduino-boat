@@ -286,6 +286,8 @@ code {
   .intro-icons {
     flex-direction: column;
     align-items: center;
+       align-items: flex-start; /* Allinea i pulsanti a sinistra */
+    margin: 0; /* Rimuovi il margine per un migliore allineamento */
   }
 
   .code-content {
